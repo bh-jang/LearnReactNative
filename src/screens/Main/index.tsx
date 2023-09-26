@@ -4,9 +4,9 @@ import { BottomTabHeaderProps, BottomTabNavigationOptions, createBottomTabNaviga
 import Home from './TabScreens/Home';
 import WebViewScreen from './WebViewScreen';
 import { Button } from '@react-native-material/core';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, ParamListBase } from '@react-navigation/native';
 
-interface MainTabParamList {
+interface MainTabParamList extends ParamListBase {
   HomeScreen: undefined;
   WebViewScreen: undefined;
   SecondScreen: undefined;
